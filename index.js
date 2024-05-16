@@ -7,7 +7,9 @@ const app = express();
 // 1) MIDDLEWARES
 app.use(cors());
 app.use(express.json());
+
 // 2) ROUTES
+app.use('/', authRouter);
 app.use('/api/auth', authRouter);
 
 
