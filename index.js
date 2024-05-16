@@ -13,7 +13,7 @@ app.use('/api/auth', authRouter);
 
 // 3) MongoDB Connection
 mongoose
-    .connect('mongodb://mongo:xdvUWhhRLNxFGHvcSZLaOqLvIkbPXVlS@monorail.proxy.rlwy.net:47997/authentification')
+    .connect('mongodb://mongo:xdvUWhhRLNxFGHvcSZLaOqLvIkbPXVlS@monorail.proxy.rlwy.net:47997')
     .then(() => console.log('Connected to MongoDB'))
     .catch((error) => console.log('Failed to connect to MongoDB', error));
 
